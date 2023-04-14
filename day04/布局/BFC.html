@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .k {
+            width: 300px;
+            height: 300px;
+            border: 1px solid red;
+            margin-top: 20px;
+        }
+
+        .c {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="k">
+
+
+</div>
+<div class="c"></div>
+<script>
+    function n() {
+        let n = 0;
+        function c() {
+            let timer = setInterval(() => {
+                if (n < 4) {
+                    console.log("Hello world");
+                    n += 1;
+                } else {
+                    clearTimeout(timer)
+                }
+            }, 2000)
+        }
+        c();
+    }
+
+    n();
+</script>
+</body>
+</html>

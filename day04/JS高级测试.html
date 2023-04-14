@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js高级测试</title>
+</head>
+<body>
+<script>
+
+
+    //基本数据类型 :String Number ubdefined null boolean Symbol bigInt  //  存放在栈 本身的值// functionc functasdoasdjkka
+    // 引用数据类型 Object Function Date                            //存放在堆 本身的地址   
+
+    //说输出
+    // setTimeout(() => {
+    //     console.log(1);
+    // }, 0);
+    // console.log(2);
+    // (new Promise((resolve) => {
+    //     console.log(3);
+    // }))
+    //     .then(() => {
+    //         console.log(4);
+    //     });
+    // console.log(5)
+
+//
+    console.log("----------------------------------------------")
+    Array.prototype.getLevel = function () {
+        let max = 0
+        const list = this
+        const stack = [list]
+        while (stack.length > 0) {
+            const data = stack.pop()
+            for (let i = 0; i < data.length; i++) {
+                let item = data[i]
+                if (Array.isArray(item)) {
+                    item.level = (data.level || 1) + 1
+                    max = Math.max(item.level, max)
+                    stack.push(item)
+                }
+            }
+        }
+        return max
+    }
+    const a1 = [1, 2, [1], [1, [2, [3]]]]
+    const a2 = [12, 3, [[6], [7, [7, [66]]], [7]], 4, [5]]
+    console.log(a1.getLevel(), '1111111')  //4console.log(a2.getLevel(), '2222222')  //5
+    console.log("-------------------------------------")
+    // let SimpleClass = {
+    //     data: "18",
+    //     [Symbol.iterator]() {
+    //         let index = 0;
+    //         return {
+    //             next: () => {
+    //                 if (index < this.data.length) {
+    //                     return { value: this.data[index++], done: false }
+    //                 } else {
+    //                     return { done: true }
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+    // for (const val of SimpleClass) {
+    //     console.log("我是of遍历出来的"+val)   //'1' '2' '3' '4' '5'
+    // }
+
+    const colorObj= {
+        white: "小白",
+        black: "小黑",
+        gray: "小灰",
+        a:{
+            c:89,
+            name:'张三'
+        }
+    }
+    let obj = {
+        a: 1,
+        b: [1, 2, 3, 4],
+        name:{
+            age:'12',
+            kk:{
+                i:90,
+                k:{
+                    p:"sd"
+                }
+            }
+        }
+    };
+    //计算对象的层数
+// function getObjLevel (obj) {
+//         let level = 1;// 初始对象的层数
+//         let objValue = Object.values(obj);
+//         for (let i = 0; i < objValue.length; i++) {
+//             if (typeof objValue[i] == 'object') {
+//                 if (!Array.isArray(objValue[i])) {
+//                     console.log(objValue[i]+1)
+//                     return getObjLevel(objValue[i])+1;
+//                 }
+//             }
+//         }
+//         return level;
+//     };
+//
+//     console.log("----"+(getObjLevel(obj)))
+    //将对象转化为可迭代对象
+    colorObj[Symbol.iterator] = function () {
+        let keys = [];  // 对象中key的集合
+        let length = 0;  // 伪装length属性
+        for (const key in colorObj) {
+            if (colorObj.hasOwnProperty(key)) {  // 防止 for...in 遍历原型对象的属性
+                keys.push(key);
+                length++;
+            }
+        }
+        let index = 0;
+        return {
+            next: () => {
+                if (index < length) {
+                    const result = { value: colorObj[keys[index]], done: false };
+                    index++;
+                    return result;
+                } else {
+                    return { value: undefined, done: true };
+                }
+            }
+        }
+    }
+    for (const colorObjElement of colorObj) {
+        console.log("cc"+colorObjElement)
+    }
+    console.log( )
+    console.log( Object.prototype.toString.call(colorObj))
+    console.log(typeof colorObj=='object')
+</script>
+</body>
+</html>

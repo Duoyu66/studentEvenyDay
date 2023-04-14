@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    .list{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 600px;
+        height: 600px;
+       background-color: pink;
+        margin: 0 auto;
+    }
+    .hob{
+        width: 150px;
+        height: 40px;
+        padding: 0 15px;
+        background-color: red;
+        border: 1px solid black;
+    }
+</style>
+<body>
+<div class="list">
+    <div class="hob">鲍尔</div>
+    <div class="hob">鲍尔</div>
+    <div class="hob">鲍尔</div>
+    <div class="hob">鲍尔</div>
+    <div class="hob">鲍尔</div>
+    <div class="hob">鲍尔</div>
+    <div class="hob">鲍尔</div>
+    <div class="hob">鲍尔</div>
+    <div class="hob">鲍尔</div>
+    <div class="hob">鲍尔</div>
+</div>
+<script>
+    function bao(){
+        var a=0;
+        for (var i = 0; i < 3; i++) {
+            setTimeout(()=>{
+                console.log(i)
+            },500)
+        }
+    }
+    bao();
+</script>
+<script src="https://api.vvhan.com/api/yinghua"></script>
+</body>
+</html>

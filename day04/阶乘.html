@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手写</title>
+</head>
+<body>
+<script>
+
+    //new 操作符都干了什么？
+    //1.创建了一个空对象
+    //2.将this指向空对象
+    //3.动态给创建的对象添加成员属性
+    //4.隐式返回this
+
+    //事件循环机制
+    // 同步任务>微任务>宏任务
+    //同步任务：
+    //微任务：微任务有Promise（then、catch、finally）、process.nextTick等，它们之间执行的先后顺序是：process.nextTick --> Promise
+    //宏任务：整体代码script --> setImmediate --> setTimeout --> setInterval --> i/o操作 --> 异步ajax
+
+    //继承
+    //原型继承     // 语法: 子构造函数.prototype = new 父构造函数()
+    //组合继承 原型+构造函数+call 子（ Person.call(this,name,age) ）+子构造函数.prototype = new 父构造函数()
+    //es6中的extends继承
+
+    //npm init vite-app <project-name>
+    //cd <project-name>
+    //npm i npm run dev
+
+
+const jsonData ={
+    "id": 1,
+    "name": "dashboard",
+    "path": "/dashboard",
+    "children": [
+        {
+            "id":2,
+            "name":"数据概览",
+            "path":"/dashboard/overview"
+        },
+        {
+            "id":3,
+            "name":"销售统计",
+            "path":"/dashboard/sales-statistics"
+        }
+    ]
+}
+ const   jsonDataOne ={
+         "id": 1,
+         "name": "dashboard",
+         "icon": "",
+         "children": [
+             {
+                 "id": 2,
+                 "name": "analysis",
+                 "path": "/dashboard/analysis",
+                 "icon":"",
+                 children:{
+                     "id": 3,
+                     "name": "analysis",
+                     "path": "/dashboard/analysis",
+                     "icon":"",
+                 }
+             },{
+                 "id": 4,
+                 "name": "analysis",
+                 "path": "/dashboard/analysis",
+                 "icon":"",
+             }
+         ]
+     }
+     const houDuan ={
+         "routes": [
+             {
+                 "path": "/home",
+                 "name": "home",
+                 "component": "home"
+             },
+             {
+                 "path": "/about",
+                 "name": "about",
+                 "component": "about"
+             }
+         ]
+     }
+
+    function convertrouter(menus) {
+        const router = [];
+        menus.forEach(menu => {
+            const item = { // 定义路由对象，对应router配置项格式要求
+                path: menu.path,
+                name: menu.name,
+                component: () => import(`@/views${menu.component}`), // 按需加载组件
+                meta: {
+                    title: menu.title,
+                    icon: menu.icon,
+                    roles: menu.roles, // 菜单权限控制对应角色列表
+                },
+            };
+            if (menu.children && menu.children.length > 0) {
+                item.children = convertrouter(menu.children); // 当前菜单有子节点，则递归调用转换函数处理子节点并添加到item中的children属性中
+            }
+            router.push(item); // 将转换后的item加入到路由数组中
+        });
+        return router;
+    }
+    function getroutes() {
+
+        // 解析并处理数据
+        return houDuan.routes.map((route) => ({
+            path: route.path,
+            name: route.name,
+            component: () => import(`@/pages${route.component}`)
+        }));
+    }
+
+    console.log(getroutes())
+//
+const pl ={
+    "routes": [
+        {
+            "path": "/dashboard",
+            "name": "dashboard",
+            "component": "@/views/dashboard.vue"
+        },
+        {
+            "path": "/about",
+            "name": "about",
+            "component": "@/views/component.vue",
+        }
+    ]
+}
+
+    // 解析路由信息json文件
+    function parseroutes(response) {
+        // 可以直接使用response.data获取json字符串，并将其解析为javascript对象
+        const routes = JSON.parse(response).routes;
+        // 对每个路由进行处理，比如转换成路由对象、添加元数据等
+        return routes.map(route => ({
+            path: route.path,
+            name: route.name,
+            component: () => import(`@/views/${route.component}`),
+            meta: {
+                title: route.meta.title || '未定义',
+                icon: route.meta.icon || '',
+                hidden: route.meta.hidden || false,
+                roles: route.roles || []
+            },
+            children:
+                (route.children && parseroutes({ data: JSON.stringify({ routes:route.children }) })) ||
+                []
+        }));
+    }
+    //
+    function generateroutes(routes) {
+        const result = []
+        for (let i = 0; i < routes.length; i++) {
+            const route = routes[i]
+            // 构造新的路由对象 { path, name, component }
+            const newroute = {
+                path: route.path,
+                name: route.name,
+                component: () => import(`${route.component}`)
+            }
+
+            // 如果子菜单不为空，则递归生成子菜单对应的路由
+            if (route.children && route.children.length > 0) {
+                newroute.children = generateroutes(route.children)
+            }
+
+            result.push(newroute)
+        }
+
+        return result
+    }
+
+    console.log("scs",generateroutes(pl.routes))
+</script>
+</body>
+</html>

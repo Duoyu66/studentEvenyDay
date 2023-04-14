@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    ///get
+    let xhr = new XMLHttpRequest();
+    xhr.open('get','http://api.uixsj.cn/hitokoto/get?type=social');
+    xhr.send();
+    xhr.onreadystatechange=function(){
+        if (xhr.readyState===4){
+            if (xhr.status===200){
+                console.log("get",xhr.responseText)
+            }
+        }
+    }
+    //post
+    
+    let xhr =new XMLHttpRequest();
+    xhr.open('post','http://api.uixsj.cn/hitokoto/get?type=social\');
+        xhr.setRequestHeader('')
+xhr.onreadystatechange=function(){
+        if (xhr.readyState===4){
+            if (xhr.status===200){
+                console.log(xhr.responseText)
+            }
+        }
+}
+    
+</script>
+</body>
+</html>

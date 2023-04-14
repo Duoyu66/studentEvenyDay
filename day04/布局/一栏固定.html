@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>布局</title>
+    <style>
+        .big{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            width: 600px;
+            height: 600px;
+            border: 1px solid red;
+            margin: 0 auto;
+        }
+        .l{
+            align-self: flex-start;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: pink;
+        }
+        .c{
+         
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: pink;
+        }
+        .r{
+            align-self: flex-end;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+<div class="big">
+    <div class="l"></div>
+    <div class="c"></div>
+    <div class="r"></div>
+
+</div>
+
+</body>
+</html>

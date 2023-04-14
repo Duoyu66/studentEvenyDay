@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue面试</title>
+</head>
+<body>
+<script>
+let a=[166,27,4,53,23,24,5,6,7,]
+//冒泡
+// function Maopao(arr){
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < arr.length-i-1; j++) {
+//             if (arr[j]>arr[j+1]){
+//                 let temp;
+//                 temp=arr[j];
+//                 arr[j]=arr[j+1];
+//                 arr[j+1]=temp;
+//             }
+//         }
+//     }
+//     return arr;
+// }
+
+let kfc=[
+    {name:"wnag1",age:12},
+    {name:"wnag2",age:13},
+    {name:"wnag3",age:19},
+    {name:"wnag4",age:19},
+    {name:"wnag5",age:17}
+]
+let p=[];
+kfc.forEach(item=>{
+    if (item.age!=19){
+        p.push(item)
+    }
+})
+console.log(p)
+</script>
+</body>
+</html>

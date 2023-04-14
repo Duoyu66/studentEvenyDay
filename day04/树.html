@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>我</h1>
+<div>
+    <button id="kk">点我加一</button>
+    <div>{{a}}</div>
+</div>
+<script>
+    let str1 = "234234";
+    let str2 = "3453453453463462";
+
+    function addBigNum(str1, str2) {
+        let result = "";
+        let len = str1.length > str2.length ? str1.length : str2.length;
+       a = str1.padStart(len, '0');
+      b = str2.padStart(len, '0')
+        let carry = 0;
+        for (let i = len-1; i >=0 ; i--) {
+            const n = +a[i] + +b[i] + carry;
+            carry = Math.floor(n/10);
+            result = (n%10) + result;
+        }
+        if (carry){
+            result =  "1"+result;
+        }
+
+        return result;
+    }
+
+    console.log(addBigNum(str1, str2))
+</script>
+
+</body>
+</html>

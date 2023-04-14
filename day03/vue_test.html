@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+</head>
+<body>
+<div id="root">
+    <button @click="handleGai">更改数据</button>
+    <br/>
+    &nbsp;
+<div id="woc">    {{msg}}</div>
+</div>
+<script>
+    new Vue({
+        el:"#root",
+        data:{
+            msg:'我是旧数据!'
+        },
+        methods:{
+            handleGai(){
+                console.log(document.getElementById('woc').innerText)
+                this.msg="鲍尔"
+                console.log(document.getElementById('woc').innerText)
+                this.$nextTick(()=>{
+                    console.log(document.getElementById('woc').innerText)
+                })
+            }
+        }
+    })
+</script>
+</body>
+</html>

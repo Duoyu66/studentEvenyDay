@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+function Fun() {//内部语句 this.prototype = {}
+
+}
+//每个函数function都有一个prototype，即显示原型
+console.log(Fun.prototype)
+//每个实力对象都有一个__proto__，可称为隐式原型
+let fn = new Fun()  //内部语句this.__prototype=Fn.prototype
+console.log(fn.__proto__===Fun.prototype)
+</script>
+</body>
+</html>

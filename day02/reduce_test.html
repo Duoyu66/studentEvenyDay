@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>加油！！！</title>
+</head>
+<body>
+<script>
+    let a=[1,2,3,4,34,23,23,23,67,3,4,4];
+    let a1=[1,2,3,4];
+    //求和
+    let b= a1.reduce((newValue,olcValue)=>{
+        console.log(newValue,olcValue,"---",(newValue+olcValue))
+        return newValue+olcValue;
+    },0)
+    console.log(b)
+    
+    //去重
+    // let newArr = a.reduce((pre,cur,index,arry)=>{
+    //     console.log(pre,cur)
+    //     if(!pre.includes(cur)){
+    //         pre.push(cur);
+    //     }
+    //     return pre;
+    // },[])
+    // console.log(newArr)
+
+</script>
+</body>
+</html>
