@@ -2,9 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>单栏</title>
+    <!--思路：左侧左盒子左浮动，右侧盒子margin-left左盒子的宽-->
+    <style>
+        html,body{
+            width: 100%;
+            height: 100%;
+        }
+
+        .left{
+            float: left;
+            width: 300px;
+            height: 100%;
+            background-color: pink;
+        }
+        .right{
+            width: 100%;
+            height: 100%;
+            margin-left: 310px;
+            background-color: skyblue;
+        }
+    </style>
+    <link rel="stylesheet" href="../public/reset.css">
 </head>
 <body>
-
+<div class="left"></div>
+<div class="right"></div>
 </body>
 </html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="../public/reset.css">
+  <style>
+    .big{
+      width: 600px;
+      height: 600px;
+      border: 1px solid black;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .childOne{
+      width: 180px;
+      height: 180px;
+      background-color: blue;
+      border-radius: 50%;
+      align-self: flex-start;
+    }
+    .childTwo{
+      width: 180px;
+      height: 180px;
+      background-color: blue;
+      border-radius: 50%;
+    }
+    .childThree{
+      align-self: flex-end;
+      width: 180px;
+      height: 180px;
+      background-color: blue;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+<div class="big">
+  <div class="childOne"></div>
+  <div class="childTwo"></div>
+  <div class="childThree"></div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    |<title>居中练习</title>
+  <link rel="stylesheet" href="../public/reset.css">
+  <style>
+    .big {
+      width: 600px;
+      height: 600px;
+      border: 1px solid red;
+      margin:0 auto;
+    /*  flex居中*/
+    /*  display: flex;*/
+    /*  justify-content: center;*/
+    /*  align-items: center;*/
+
+    /*平移+定位  */
+      position: relative;
+    }
+    .small{
+      /*平移+定位*/
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+
+
+      width:250px;
+      height: 250px;
+      border: solid 1px skyblue;
+    }
+  </style>
+</head>
+<body>
+<div class="big">
+<div class="small">这是一首简单的小情歌，唱着人们心中的曲折，我想我很适合，当一个歌颂者，脚边的空气转了</div>
+</div>
+</body>
+</html>
