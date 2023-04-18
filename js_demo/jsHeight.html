@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    <!--    手写instaceof-->
+    function myInstanceof(left, right) {
+        let rp = right.prototype;
+        left = left.__proto__;
+        while (true) {
+            if (left == null) return false;
+            if (rp === left) return true;
+            left = left.__proto__;
+        }
+
+    }
+
+    function Person() {
+        this.name = "wang"
+    }
+
+    function Student() {
+        this.age = age
+    }
+
+    let p1 = new Person();
+    console.log(myInstanceof(p1, Person))
+
+    // 手写
+    let nums = [1, 4, 5, 2, 3, 9];
+    let sum = nums.reduce((pre, cur) => {
+        return pre += cur;
+    })
+    console.log(sum)
+</script>
+</body>
+</html>
