@@ -5,7 +5,12 @@
     <title>Title</title>
 </head>
 <body>
+<button id="root">点我出弹窗!!!</button>
 <script>
+    const btn = document.getElementById('root');
+    console.log(btn)
+    console.log(btn)
+
     <!--    手写instaceof-->
     function myInstanceof(left, right) {
         let rp = right.prototype;
@@ -15,8 +20,8 @@
             if (rp === left) return true;
             left = left.__proto__;
         }
-
     }
+
 
     function Person() {
         this.name = "wang"
@@ -34,7 +39,11 @@
     let sum = nums.reduce((pre, cur) => {
         return pre += cur;
     })
-    console.log(sum)
+    console.log(sum);
+    console.log("我" + "测");
+    console.log("我擦")
+
 </script>
+<script src="https://api.vvhan.com/api/bolang"></script>
 </body>
 </html>
