@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/studyMain.iml" filepath="$PROJECT_DIR$/.idea/studyMain.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../vue3/vtv_cool/.idea/vtv_cool.iml" filepath="$PROJECT_DIR$/../../vue3/vtv_cool/.idea/vtv_cool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../笔记大全/.idea/笔记大全.iml" filepath="$PROJECT_DIR$/../../../笔记大全/.idea/笔记大全.iml" />
     </modules>
   </component>
 </project>

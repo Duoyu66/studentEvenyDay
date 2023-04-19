@@ -9,5 +9,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="vtv_cool" />
+    <orderEntry type="module" module-name="笔记大全" />
   </component>
 </module>
