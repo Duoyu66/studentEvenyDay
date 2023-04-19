@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="482799bb-db88-40c1-bf78-d7b7ec69efdd" name="更改" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="482799bb-db88-40c1-bf78-d7b7ec69efdd" name="更改" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +83,7 @@
       <workItem from="1681810117663" duration="4176000" />
       <workItem from="1681867800646" duration="8576000" />
       <workItem from="1681896788186" duration="18000" />
-      <workItem from="1681904216689" duration="2066000" />
+      <workItem from="1681904216689" duration="2101000" />
     </task>
     <task id="LOCAL-00001" summary="添加注释">
       <created>1681532723770</created>
@@ -143,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681896795405</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="补充更新">
+      <created>1681907162842</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681907162842</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
