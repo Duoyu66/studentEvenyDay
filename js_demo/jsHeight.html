@@ -7,43 +7,29 @@
 <body>
 <button id="root">点我出弹窗!!!</button>
 <script>
-    const btn = document.getElementById('root');
-    console.log(btn)
-    console.log(btn)
-
-    <!--    手写instaceof-->
-    function myInstanceof(left, right) {
-        let rp = right.prototype;
-        left = left.__proto__;
-        while (true) {
-            if (left == null) return false;
-            if (rp === left) return true;
-            left = left.__proto__;
+    const module = {
+        x: 42,
+        getX: function () {
+            return this.x;
         }
+    };
+    const unboundGetX = module.getX;
+    console.log(unboundGetX())
+    const c = unboundGetX.bind(module);
+    console.log(c())
+    var year = 2022
+
+    function getDate(month, day) {
+        return this.year + '-' + month + '-' + day
     }
 
-
-    function Person() {
-        this.name = "wang"
-    }
-
-    function Student() {
-        this.age = age
-    }
-
-    let p1 = new Person();
-    console.log(myInstanceof(p1, Person))
-
-    // 手写
-    let nums = [1, 4, 5, 2, 3, 9];
-    let sum = nums.reduce((pre, cur) => {
-        return pre += cur;
-    })
-    console.log(sum);
-    console.log("我" + "测");
-    console.log("我擦")
+    let obj = {year: 2023}
+    console.log(getDate.call(null, 3, 8))
+    console.log(getDate.call(obj, 3, 8))
+    console.log(getDate.apply(obj, [6, 8]))
+    console.log(getDate.bind(obj)(3, 8))
 
 </script>
-<script src="https://api.vvhan.com/api/bolang"></script>
+
 </body>
 </html>
