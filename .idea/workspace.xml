@@ -4,7 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="482799bb-db88-40c1-bf78-d7b7ec69efdd" name="更改" comment="" />
+    <list default="true" id="482799bb-db88-40c1-bf78-d7b7ec69efdd" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/day05/c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day05/snow.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day05/snowCss.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/studyMain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/studyMain.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day05/ceter.html" beforeDir="false" afterPath="$PROJECT_DIR$/day05/ceter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js_demo/jsHeight.html" beforeDir="false" afterPath="$PROJECT_DIR$/js_demo/jsHeight.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,10 +22,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="CSS File" />
         <option value="TypeScript File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -24,8 +34,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/day05/snow.html" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="F:/libingle/v3/qxy/package.json" />
   </component>
   <component name="ProjectId" id="2ORoAC4S4RWfwJ3kodXQyfQAjoX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -45,7 +61,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/PROJECT/笔记大全&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/libingle/v3/qxy&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -56,11 +72,26 @@
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;E:\\PROJECT\\春招\\vue3\\vtv_bl\\node_modules\\prettier&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.VCS&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;E:\\PROJECT\\春招\\vue3\\vtv_cool\\node_modules\\typescript\\lib&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\webJet\\WebStorm 2023.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\libingle\v2\vj_bl\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="c.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/day05/c.js" working-dir="$PROJECT_DIR$/day05">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.c.js" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="默认任务">
@@ -83,7 +114,15 @@
       <workItem from="1681810117663" duration="4176000" />
       <workItem from="1681867800646" duration="8576000" />
       <workItem from="1681896788186" duration="18000" />
-      <workItem from="1681904216689" duration="2101000" />
+      <workItem from="1681904216689" duration="2346000" />
+      <workItem from="1681908586048" duration="2557000" />
+      <workItem from="1681911205392" duration="284000" />
+      <workItem from="1681911506465" duration="642000" />
+      <workItem from="1682150807724" duration="2477000" />
+      <workItem from="1682215130037" duration="1961000" />
+      <workItem from="1682233205601" duration="605000" />
+      <workItem from="1682234507884" duration="684000" />
+      <workItem from="1682235215059" duration="377000" />
     </task>
     <task id="LOCAL-00001" summary="添加注释">
       <created>1681532723770</created>
@@ -148,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681907162842</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="补充更新">
+      <created>1681907376566</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1681907376567</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

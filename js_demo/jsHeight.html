@@ -7,6 +7,9 @@
 <body>
 <button id="root">点我出弹窗!!!</button>
 <script>
+    function fun()
+
+    document.cookie
     const module = {
 
         x: 42,
@@ -30,7 +33,10 @@
     console.log(getDate.call(obj, 3, 8))
     console.log(getDate.apply(obj, [6, 8]))
     console.log(getDate.bind(obj)(3, 8))
-
+    var a = 1;
+    let b = 2;
+    console.log(window.a, window.b)
+    //2023/4/25
 </script>
 
 </body>

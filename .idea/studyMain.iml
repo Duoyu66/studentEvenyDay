@@ -8,7 +8,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module" module-name="vtv_cool" />
-    <orderEntry type="module" module-name="笔记大全" />
+    <orderEntry type="module" module-name="k" />
+    <orderEntry type="module" module-name="vj_bl" />
+    <orderEntry type="module" module-name="v3_qxy" />
   </component>
 </module>

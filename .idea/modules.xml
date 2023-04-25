@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://F:/libingle/vue模板/v2/k/.idea/k.iml" filepath="F:/libingle/vue模板/v2/k/.idea/k.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/studyMain.iml" filepath="$PROJECT_DIR$/.idea/studyMain.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../vue3/vtv_cool/.idea/vtv_cool.iml" filepath="$PROJECT_DIR$/../../vue3/vtv_cool/.idea/vtv_cool.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../../../笔记大全/.idea/笔记大全.iml" filepath="$PROJECT_DIR$/../../../笔记大全/.idea/笔记大全.iml" />
+      <module fileurl="file://F:/libingle/v3/v3_qxy/.idea/v3_qxy.iml" filepath="F:/libingle/v3/v3_qxy/.idea/v3_qxy.iml" />
+      <module fileurl="file://F:/libingle/v2/vj_bl/.idea/vj_bl.iml" filepath="F:/libingle/v2/vj_bl/.idea/vj_bl.iml" />
     </modules>
   </component>
 </project>
