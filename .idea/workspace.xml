@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="482799bb-db88-40c1-bf78-d7b7ec69efdd" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/day05/c.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day05/snow.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day05/snowCss.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/studyMain.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/studyMain.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/day05/ceter.html" beforeDir="false" afterPath="$PROJECT_DIR$/day05/ceter.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js_demo/jsHeight.html" beforeDir="false" afterPath="$PROJECT_DIR$/js_demo/jsHeight.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day05/snow.html" beforeDir="false" afterPath="$PROJECT_DIR$/day05/snow.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,9 +33,6 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
-  </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="F:/libingle/v3/qxy/package.json" />
   </component>
   <component name="ProjectId" id="2ORoAC4S4RWfwJ3kodXQyfQAjoX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -123,6 +114,13 @@
       <workItem from="1682233205601" duration="605000" />
       <workItem from="1682234507884" duration="684000" />
       <workItem from="1682235215059" duration="377000" />
+      <workItem from="1682556442716" duration="2050000" />
+      <workItem from="1682558599237" duration="1166000" />
+      <workItem from="1682864290843" duration="77000" />
+      <workItem from="1682864472762" duration="347000" />
+      <workItem from="1682864835590" duration="21000" />
+      <workItem from="1683038243424" duration="5000" />
+      <workItem from="1683039394508" duration="170000" />
     </task>
     <task id="LOCAL-00001" summary="添加注释">
       <created>1681532723770</created>
